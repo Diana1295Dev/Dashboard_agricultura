@@ -1,6 +1,6 @@
 # 🌟 Proyectos con Streamlit: Gestión de Tareas y Dashboard Agroclimático
 
-¡Bienvenido a este repositorio que contiene **dos proyectos interactivos desarrollados con Streamlit**! Aquí aprenderás desde cómo construir una aplicación para la gestión de tareas, hasta cómo vincular APIs externas y bases de datos para visualizar información agroclimática en tiempo real. 🌱🌤️📊
+¡Bienvenido a este repositorio que contiene **dos proyectos interactivos desarrollados con Streamlit**! Aquí aprenderás desde cómo construir una aplicación para la gestión de tareas, hasta cómo vincular APIs externas y bases de datos para visualizar información agroclimática en tiempo real. 🌱🌤️📊.
 
 ---
 

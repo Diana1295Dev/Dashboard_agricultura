@@ -22,7 +22,7 @@ Una aplicación intuitiva para gestionar tareas asignadas a diferentes usuarios.
 
 > Ideal para aprender a usar Streamlit, aplicar Programación Orientada a Objetos en Python y automatizar reportes.
 
-📁 **Ubicación:** `app.py` + carpeta `modulos/`
+📁 **Ubicación:** `gestor_tareas/modulos`
 
 👩‍💻 **Autoría:**  
 - Ana María García Arias  
@@ -41,7 +41,7 @@ Este proyecto se enfoca en integrar datos de diferentes fuentes mediante APIs y 
 
 > Ideal para aprender sobre consumo de APIs, manejo de datos en tiempo real, y construcción de dashboards con Pandas y Streamlit.
 
-📁 **Ubicación:** `main.py`
+📁 **Ubicación:** `Base_de_datos`
 
 👩‍💻 **Autoría:**  
 - Diana Carolina González Díaz

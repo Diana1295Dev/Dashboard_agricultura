@@ -1,6 +1,6 @@
 # 🌟 Proyectos con Streamlit: Gestión de Tareas y Dashboard Agroclimático
 
-¡Bienvenido a este repositorio que contiene **dos proyectos interactivos desarrollados con Streamlit**! Aquí aprenderás desde cómo construir una aplicación para la gestión de tareas, hasta cómo vincular APIs externas para visualizar información agroclimática en tiempo real. 🌱🌤️📊
+¡Bienvenido a este repositorio que contiene **dos proyectos interactivos desarrollados con Streamlit**! Aquí aprenderás desde cómo construir una aplicación para la gestión de tareas, hasta cómo vincular APIs externas y bases de datos para visualizar información agroclimática en tiempo real. 🌱🌤️📊
 
 ---
 
@@ -8,35 +8,43 @@
 
 Este repositorio contiene **dos proyectos independientes**:
 
+---
+
 ### 1️⃣ Sistema de Gestión de Tareas con Streamlit
 
-Una aplicación que permite a los usuarios gestionar sus tareas de manera eficiente. Aquí podrás:
+Una aplicación intuitiva para gestionar tareas asignadas a diferentes usuarios. Permite:
 
 - ✅ Crear nuevos usuarios.
-- ✏️ Crear, modificar o eliminar tareas asociadas a cada usuario.
-- 📊 Visualizar el estado de cada tarea (Pendiente, En Progreso, Completada).
-- 📥 Exportar reportes en Excel.
-- 📈 Ver estadísticas visuales con gráficos interactivos.
+- ✏️ Crear, modificar o eliminar tareas.
+- 🔄 Cambiar el estado de las tareas (Pendiente, En Progreso, Completada).
+- 📊 Visualizar estadísticas y gráficos interactivos.
+- 📥 Generar y exportar informes en Excel.
 
-> Ideal para aprender a trabajar con Streamlit, manejo de clases en Python y generación de reportes automatizados.
+> Ideal para aprender a usar Streamlit, aplicar Programación Orientada a Objetos en Python y automatizar reportes.
 
-📁 Ubicación: `app.py` y carpeta `modulos/`
+📁 **Ubicación:** `app.py` + carpeta `modulos/`
+
+👩‍💻 **Autoría:**  
+- Ana María García Arias  
+- Diana Carolina González Díaz
 
 ---
 
-### 2️⃣ Dashboard Agroclimático Integrado
+### 2️⃣ Dashboard Agroclimático Vinculado a APIs y Bases de Datos
 
-Este proyecto vincula información desde **dos APIs**:
+Este proyecto se enfoca en integrar datos de diferentes fuentes mediante APIs y generar un dashboard dinámico. Incluye:
 
-- 🌾 **Cultivos de Casanare** (datos agrícolas).
-- 🌦️ **Datos climáticos** (probablemente desde una API meteorológica).
-- 🔗 Conexión directa con **Rainlay**, para enriquecer el análisis con información contextual.
+- 🌾 Conexión a una API sobre **cultivos en Casanare**.
+- 🌦️ Consulta a una API climática.
+- 🔗 Vinculación de estos datos en una base unificada mediante conexión con **Rainlay**.
+- 📊 Visualización final en un dashboard desarrollado con Streamlit.
 
-Finalmente, se genera un **dashboard interactivo en Streamlit** que combina ambos conjuntos de datos para ofrecer información clara y útil para agricultores, tomadores de decisiones y entusiastas de los datos.
+> Ideal para aprender sobre consumo de APIs, manejo de datos en tiempo real, y construcción de dashboards con Pandas y Streamlit.
 
-> Ideal para aprender a consumir APIs, fusionar datasets, usar Pandas y construir dashboards dinámicos con Streamlit.
+📁 **Ubicación:** `main.py`
 
-📁 Ubicación: `main.py` y archivos relacionados.
+👩‍💻 **Autoría:**  
+- Diana Carolina González Díaz
 
 ---
 
@@ -46,9 +54,9 @@ Finalmente, se genera un **dashboard interactivo en Streamlit** que combina ambo
 - Streamlit
 - Pandas & Numpy
 - Matplotlib / Plotly
-- APIs REST (JSON)
 - xlsxwriter
-- Rainlay API
+- Consumo de APIs REST (JSON)
+- Integración con Rainlay
 
 ---
 
@@ -58,3 +66,4 @@ Finalmente, se genera un **dashboard interactivo en Streamlit** que combina ambo
    ```bash
    git clone https://github.com/tu-usuario/tu-repo.git
    cd tu-repo
+

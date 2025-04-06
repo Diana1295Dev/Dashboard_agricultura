@@ -41,7 +41,7 @@ Este proyecto usa las siguientes bibliotecas (incluidas en `requirements.txt`):
 ## 💄 Estructura del proyecto
 
 ```
-Inteligencia_artificial/
+Dashboard_agricultura/
 │
 ├── app.py                <- Código de la interfaz con Streamlit
 ├── cargar_datos.py       <- Carga datos a PostgreSQL

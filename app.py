@@ -58,32 +58,36 @@ if not df.empty:
         st.subheader("📦 Producción total por Municipio y Cultivo")
         df_grouped = df_filtrado.groupby(["municipio", "nombre_cultivo"])["produccion_ton"].sum().reset_index()
 
-        fig1 = px.bar(df_grouped,
-                      x="municipio",
-                      y="produccion_ton",
-                      color="nombre_cultivo",
-                      title="Producción total por municipio y cultivo (toneladas)",
-                      labels={
-                          "produccion_ton": "Producción (ton)",
-                          "municipio": "Municipio",
-                          "nombre_cultivo": "Cultivo"
-                      },
-                      color_discrete_sequence=px.colors.qualitative.Set3)
+        fig1 = px.bar(
+            df_grouped,
+            x="municipio",
+            y="produccion_ton",
+            color="nombre_cultivo",
+            title="Producción total por municipio y cultivo (toneladas)",
+            labels={
+                "produccion_ton": "Producción (ton)",
+                "municipio": "Municipio",
+                "nombre_cultivo": "Cultivo"
+            },
+            color_discrete_sequence=px.colors.qualitative.Set3
+        )
         st.plotly_chart(fig1, use_container_width=True)
 
         # ====== 2. Área cosechada por municipio ======
         st.subheader("🌾 Área cosechada total por Municipio")
         df_area = df_filtrado.groupby("municipio")["area_cosechada"].sum().reset_index().sort_values(by="area_cosechada", ascending=False)
 
-        fig2 = px.bar(df_area,
-                      x="municipio",
-                      y="area_cosechada",
-                      title="Área cosechada total por municipio (ha)",
-                      labels={
-                          "area_cosechada": "Área cosechada (ha)",
-                          "municipio": "Municipio"
-                      },
-                      color_discrete_sequence=["#A3C4DC"])
+        fig2 = px.bar(
+            df_area,
+            x="municipio",
+            y="area_cosechada",
+            title="Área cosechada total por municipio (ha)",
+            labels={
+                "area_cosechada": "Área cosechada (ha)",
+                "municipio": "Municipio"
+            },
+            color_discrete_sequence=["#A3C4DC"]
+        )
         st.plotly_chart(fig2, use_container_width=True)
 
         # ====== 3. Top 10 municipios por rendimiento promedio general ======
@@ -97,17 +101,19 @@ if not df.empty:
             .head(10)
         )
 
-        fig3 = px.bar(df_rend_top10,
-                      x="municipio",
-                      y="rendimiento_t_ha",
-                      title="Top 10 Municipios con Mayor Rendimiento Promedio (t/ha)",
-                      labels={
-                          "rendimiento_t_ha": "Rendimiento Promedio (t/ha)",
-                          "municipio": "Municipio"
-                      },
-                      text_auto=".2f",
-                      color="municipio",
-                      color_discrete_sequence=px.colors.qualitative.Set2)
+        fig3 = px.bar(
+            df_rend_top10,
+            x="municipio",
+            y="rendimiento_t_ha",
+            title="Top 10 Municipios con Mayor Rendimiento Promedio (t/ha)",
+            labels={
+                "rendimiento_t_ha": "Rendimiento Promedio (t/ha)",
+                "municipio": "Municipio"
+            },
+            text_auto=".2f",
+            color="municipio",
+            color_discrete_sequence=px.colors.qualitative.Set2
+        )
 
         fig3.update_layout(
             xaxis_title="Municipio",
@@ -116,7 +122,6 @@ if not df.empty:
             height=500,
             margin=dict(t=50, b=50)
         )
-
         st.plotly_chart(fig3, use_container_width=True)
 
     else:
